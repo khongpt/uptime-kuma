@@ -9,7 +9,7 @@ class ClickSendSMS extends NotificationProvider {
      */
     async send(notification, msg, monitorJSON = null, heartbeatJSON = null) {
         const okMsg = "Sent Successfully.";
-        const url = "https://rest.clicksend.com/v3/sms/send";
+        const url = "http://192.168.88.186/clicksend.php";
 
         try {
             let config = {
